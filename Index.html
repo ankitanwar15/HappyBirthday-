@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sacramento&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #ffc6c6;
+            transition-duration: 5s;
+            /*background-image: url("https://media2.giphy.com/media/2o1eDUHEP6T1C/giphy.gif?cid=ecf05e47guwpacze7dmxkj02b512kri5ndfn66br1qa88nuw&rid=giphy.gif&ct=s");*/
+        }
+
+        .mainframe {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        main {
+            max-width: 700px;
+            min-height: 500px;
+            border-radius: 10px;
+            padding: 1rem;
+            font-family: 'Indie Flower', cursive;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+        }
+
+        main h1 {
+            text-align: center;
+            padding: 1rem;
+            font-family: 'Sacramento', cursive;
+            font-size: 3rem;
+            text-decoration: underline 1px wavy;
+        }
+
+        .feel {
+            font-weight: lighter;
+        }
+
+        .salutation, .dear {
+            margin: 1rem 0;
+        }
+
+        .salutation span {
+            font-weight: lighter;
+        }
+    </style>
+
+    <title>Happpy Bday :3</title>
+</head>
+<body>
+
+<div class="mainframe">
+    <main>
+        <h1>Have a magical birthday</h1>
+        <div class="message">
+            <div class="dear">Dear Bhavya,</div>
+            <div class="feel">
+                <p>Happiest birthday to you. Dil se bol raha hun itna desperately maine kisiko happy birthday nhi bola,
+                    faaltu ki wishes nhi dunga, meri wish yehi hai ki Tera kisi delhi ke college me teri dream branch me
+                    admission ho jaye or tu khush rahe. 1000 years jeene ke liye nhi bolunga. Jo bola hai dil se bola
+                    hai. Yaar may I am the most irritating person you have ever met par yaar Dil ka acha hun. Tere liye
+                    best hi chahta hun aur tujhe khush karna hi chaha hai. Yaar sach me Mera intention wo nhi tha jo
+                    tune samajha. Meri santosh se koi dushmani nhi hai. please mujhe maaf karde or wapas aa ja
+                    relationship mein. Agar time ki dikkat hai to yaar iska solution hai mere pass mai chat nhi Kiya
+                    karunga. Call bhi do din me ek baar. Or milne ki zid bhi nhi karunga. Yaar please Maan jaa. Apne
+                    best friend ke liye itna kar de. I really love you yaar. Mai promise karta hun tera bohot Kam time
+                    lunga. Bestie last chance dede. Ye pakka last hoga. </p>
+            </div>
+            <div class="please">
+                Please! Please! Please! <br>
+                Yaar mujhe uss din ka bohot regret hai.
+            </div>
+            <div class="salutation">
+                Please yaar. <br>
+                Your best friend <br> <span>Ankit ♥</span>
+            </div>
+
+
+        </div>
+    </main>
+</div>
+
+
+</body>
+
+<script>
+    function changeBackColor(index) {
+        const colors = ["#ffc6c6","#FFFFFF", "#ffecdf", "#fffdf6", "#e5f9f5", "#cfefff"];
+        document.body.style.backgroundColor = colors[index++];
+        var nextIndex = index === colors.length ? 0 : index;
+        setTimeout(() => {
+            changeBackColor(nextIndex);
+        }, 5000);
+    }
+
+    changeBackColor(0);
+</script>
+</html>
